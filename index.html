@@ -114,8 +114,8 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500"
       data-pause="hover">
       <div class="carousel-inner">
-        <div class="carousel-item active">         
-        <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class="testimonials_img" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
         </div>
@@ -159,30 +159,71 @@
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+    <!-- Need to add "row" class to implement Bootstrap Columns -->
+    <div class="row">
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+      <!-- made a "pricing_column" class, and added column sizes -->
+      <div class="pricing_column col-lg-4 col-md-6">
+        <!-- "card" class needed to make the three cards -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <!-- "col-12 mx-auto" center's and controls the size of the button -->
+            <button class="col-12 mx-auto btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing_column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="col-12 mx-auto btn btn-lg btn-block btn-dark btn-secondary" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing_column col-lg-4 col-md-12">
+        <div class="card">
+          <div class="card-header"><h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+          <button class="col-12 mx-auto btn btn-lg btn-block btn-dark btn-secondary" type="button">Sign Up</button>
+        </div>
+      </div>
+    </div>
 
 
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
 
 
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+
+
+
+
+
+
+
+
+
+
+
 
   </section>
 
