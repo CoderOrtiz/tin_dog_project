@@ -48,7 +48,6 @@
 
 
       <!-- Title -->
-
       <div class="row">
         <div class="col-lg-6">
           <h1 font="Montserrat-black">Meet new and interesting dogs nearby.</h1>
@@ -58,8 +57,9 @@
               class="fab fa-google-play"></i> Download</button>
         </div>
 
-
-        <div class="col-lg-6">
+        <!-- Used CSS Positioning and the z-index to position iphone under section 2 -->
+        <!-- With Bootstrap 5 columns do not default to position: relative; must add class to make it work -->
+        <div class="iphone_sizing col-lg-6">
           <img class="title_image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
       </div>
@@ -111,8 +111,7 @@
 
   <section id="testimonials">
     <!-- added Bootstrap Carousel to HTML with Testimonials -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500"
-      data-pause="hover">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
@@ -122,7 +121,7 @@
         <div class="carousel-item">
           <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of
             their life. I think.</h2>
-          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <img class="testimonials_img" src="images/lady-img.jpg" alt="lady-profile">
           <em>Beverly, Illinois</em>
         </div>
 
@@ -156,8 +155,8 @@
 
   <section id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
+    <h2 class="pricing_header">A Plan for Every Dog's Needs</h2>
+    <p class="pricing_header">Simple and affordable price plans for your and your dog.</p>
 
     <!-- Need to add "row" class to implement Bootstrap Columns -->
     <div class="row">
@@ -171,11 +170,13 @@
           </div>
           <div class="card-body">
             <h2>Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
+            <p>✅ 5 Matches Per Day</p>
+            <p>✅ 10 Messages Per Day</p>
+            <p>✅ Unlimited App Usage</p>
+            <p>❌ Unlimited Likes Per Hour</p>
+            <p>❌ Pirority Listing</p>
             <!-- "col-12 mx-auto" center's and controls the size of the button -->
-            <button class="col-12 mx-auto btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            <button class="col-12 mx-auto btn btn-lg btn-block btn btn-outline-secondary" type="button">Sign Up</button>
           </div>
         </div>
       </div>
@@ -187,10 +188,13 @@
           </div>
           <div class="card-body">
             <h2>$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button class="col-12 mx-auto btn btn-lg btn-block btn-dark btn-secondary" type="button">Sign Up</button>
+            <p>✅ Unlimited Matches</p>
+            <p>✅ Unlimited Messages</p>
+            <p>✅ Unlimited App Usage</p>
+            <p>✅ 25 Likes Per Hour</p>
+            <p>❌ Pirority Listing</p>
+            
+            <button class="col-12 mx-auto btn btn-lg btn-block btn btn-outline-success" type="button">Sign Up</button>
           </div>
         </div>
       </div>
@@ -201,11 +205,12 @@
         </div>
         <div class="card-body">
           <h2>$99 / mo</h2>
-          <p>Pirority Listing</p>
-          <p>Unlimited Matches</p>
-          <p>Unlimited Messages</p>
-          <p>Unlimited App Usage</p>
-          <button class="col-12 mx-auto btn btn-lg btn-block btn-dark btn-secondary" type="button">Sign Up</button>
+          <p>✅ Unlimited Matches</p>
+          <p>✅ Unlimited Messages</p>
+          <p>✅ Unlimited App Usage</p>
+          <p>✅ Unlimited Likes Per Hour</p>
+          <p>✅ Pirority Listing</p>
+          <button class="col-12 mx-auto btn btn-lg btn-block btn btn-outline-primary" type="button">Sign Up</button>
         </div>
       </div>
     </div>
