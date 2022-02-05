@@ -27,11 +27,11 @@ h3{
     font-weight:900;
 }
 
+/* Navigation Bar/Section 1 */
+
 .container-fluid {
     padding: 3% 15%;
 }
-
-/* Navigation Bar */
 
 .navbar {
     padding-bottom: 4.5rem;
@@ -53,13 +53,13 @@ h3{
     font-weight: 400;
 }
 
-/* Download Buttons */
+/* Download Buttons/Section 1 */
 
 .download_button {
     margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
+/* Title Image/Section 1 */
 
 /* made absolute */
 .title_image {
@@ -148,6 +148,34 @@ h3{
     text-align: center;
 }
 
+/* Call to Action(CTA)/Section 5 */
+
+#cta {
+    background-color: #ff4c68;
+    color: white;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+#cta h3 {
+    font-family: "montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+/* Footer/Section 6 */
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+span {
+    padding: 1% 1%;
+}
+
+/* Additional Responsive CSS */
 /* Added "media" to make phone img upright/static. Made section 1 align center */
 @media (max-width: 1028px) {
     .title_image {

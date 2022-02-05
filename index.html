@@ -28,7 +28,7 @@
 
   <section id="title">
 
-    <!-- Nav Bar -->
+    <!-- NavBar/Section 1 -->
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark"> <a class="navbar-brand">tindog</a> <button
           class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -36,18 +36,15 @@
             class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"> <a class="nav-link" href="">Contact</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="">Pricing</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="">Download</a>
+            <li class="nav-item"> <a class="nav-link" href="#footer">Contact</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#pricing">Pricing</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
-
       </nav>
 
-
-
-      <!-- Title -->
+      <!-- Title/Section 1 -->
       <div class="row">
         <div class="col-lg-6">
           <h1 font="Montserrat-black">Meet new and interesting dogs nearby.</h1>
@@ -59,6 +56,7 @@
 
         <!-- Used CSS Positioning and the z-index to position iphone under section 2 -->
         <!-- With Bootstrap 5 columns do not default to position: relative; must add class to make it work -->
+        <!-- iPhone Image/Section 1 -->
         <div class="iphone_sizing col-lg-6">
           <img class="title_image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
@@ -66,8 +64,7 @@
     </div>
   </section>
 
-
-  <!-- Features -->
+  <!-- Features/Section 2 -->
 
   <section id="features">
 
@@ -77,6 +74,7 @@
     <div class="row">
 
       <!-- Check Mark CSS -->
+
       <div class="feature-box col-lg-4">
         <!-- To get the "check circle" to be 4 times the size, need to add "fa-4x" -->
         <!-- to edit the "check circle" add the word "icon" in front of "fas..." to create an icon class -->
@@ -86,6 +84,7 @@
       </div>
 
       <!-- Bullseye CSS -->
+
       <div class="feature-box col-lg-4">
         <!-- To get the "bullseye" to be 4 times the size, need to add "fa-4x" -->
         <!-- to edit the "bullseye" add the word "icon" in front of "fas..." to create an icon class -->
@@ -95,6 +94,7 @@
       </div>
 
       <!-- Heart CSS -->
+
       <div class="feature-box col-lg-4">
         <!-- To get the "heart" to be 4 times the size, need to add "fa-4x" -->
         <!-- to edit the "heart" add the word "icon" in front of "fas..." to create an icon class -->
@@ -103,11 +103,9 @@
         <p>Find the love of your dog's life or your money back.</p>
       </div>
     </div>
-
   </section>
 
-
-  <!-- Testimonials -->
+  <!-- Testimonials/Section 3 -->
 
   <section id="testimonials">
     <!-- added Bootstrap Carousel to HTML with Testimonials -->
@@ -139,19 +137,16 @@
       </div>
   </section>
 
-
-  <!-- Press -->
+  <!-- Press/Section 3 -->
 
   <section id="press">
     <img class="press_logo" src="images/techcrunch.png" alt="tc-logo">
     <img class="press_logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press_logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press_logo" src="images/mashable.png" alt="mashable-logo">
-
   </section>
 
-
-  <!-- Pricing -->
+  <!-- Pricing/Section 4 -->
 
   <section id="pricing">
 
@@ -161,9 +156,10 @@
     <!-- Need to add "row" class to implement Bootstrap Columns -->
     <div class="row">
 
-      <!-- made a "pricing_column" class, and added column sizes -->
+      <!-- Made a "pricing_column" class, and added column sizes -->
       <div class="pricing_column col-lg-4 col-md-6">
         <!-- "card" class needed to make the three cards -->
+        <!-- Chihuahua Card -->
         <div class="card">
           <div class="card-header">
             <h3>Chihuahua</h3>
@@ -181,6 +177,7 @@
         </div>
       </div>
 
+      <!-- Labrador Class -->
       <div class="pricing_column col-lg-4 col-md-6">
         <div class="card">
           <div class="card-header">
@@ -198,7 +195,7 @@
           </div>
         </div>
       </div>
-
+      <!-- Mastiff Card -->
       <div class="pricing_column col-lg-4 col-md-12">
         <div class="card">
           <div class="card-header"><h3>Mastiff</h3>
@@ -214,44 +211,29 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </section>
 
-
-  <!-- Call to Action -->
+  <!-- Call to Action/Section 5 -->
+  <!-- Added Social Media Buttons with designated logo's -->
 
   <section id="cta">
-
     <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+    <button type="button" class="btn btn-dark btn btn-lg download_button"><i class="fab fa-apple"></i>
+      Download</button>
+    <button type="button" class="btn btn-outline-light btn btn-lg download_button"><i
+        class="fab fa-google-play"></i> Download</button>
   </section>
 
-
-  <!-- Footer -->
+  <!-- Footer/Section 6 -->
+  <!-- Added "span's" to not effect above download buttons -->
 
   <footer id="footer">
-
-    <p>© Copyright TinDog</p>
-
+    <span class="fab fa-twitter"></span>
+    <span class="fab fa-facebook-f"></span>
+    <span class="fab fa-instagram"></span> 
+    <span class="fas fa-envelope"></span>
+    <p>© Copyright 2022 TinDog</p>
   </footer>
-
 
 </body>
 
