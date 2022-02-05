@@ -147,3 +147,24 @@ h3{
 .card-header {
     text-align: center;
 }
+
+/* Added "media" to make phone img upright/static. Made section 1 align center */
+@media (max-width: 1028px) {
+    .title_image {
+        position: static;
+        transform: rotate(0);
+        
+    }
+
+    .iphone_sizing {
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .col-lg-6 {
+        text-align: center;
+    }
+}
