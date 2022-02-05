@@ -1,36 +1,23 @@
 body {
     font-family: "montserrat";
+    text-align: center;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: white;
-}
-
-h1 {
-    font-style: bold;
+h1, h2, h3 {
+    font-family: "montserrat";
     font-weight: 900;
+}
+
+.big_heading {
+    font-family: "montserrat";
     font-size: 3.5rem;
     line-height: 1.5;
-}
-
-h2 {
-    font-family: "montserrat";
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
-}
-
-h3{
-    font-family: "montserrat";
-    font-size:  1.5rem;
-    font-weight:900;
 }
 
 /* Navigation Bar/Section 1 */
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 7% 15%;
 }
 
 .navbar {
@@ -40,7 +27,7 @@ h3{
 .navbar-brand {
     font-family: "Ubuntu";
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .nav-item {
@@ -56,11 +43,20 @@ h3{
 /* Download Buttons/Section 1 */
 
 .download_button {
-    margin: 5% 3% 5% 0;
+    margin: 5% 2%
 }
 
-/* Title Image/Section 1 */
+/* Title Section/Section 1 */
 
+#title {
+    background-color: #ff4c68;
+    color: white;
+    text-align: left;
+}
+
+#title.container-fluid {
+    padding: 3% 15% 7%;
+}
 /* made absolute */
 .title_image {
     width: 60%;
@@ -78,14 +74,16 @@ h3{
 /* If youre going to use "z-index" with a white background, you must write the background color in code */
 /* made it relative and z-index of 1 */
 #features {
-    padding: 7% 15%;
     background-color: white;
     position: relative;
     z-index: 1;
 }
 
+.feature_title {
+    font-size: 1.5rem;
+}
+
 .feature-box {
-    text-align: center;
     padding: 4.5%;
 }
 
@@ -101,9 +99,13 @@ h3{
 /* Testimonials/Section 3 */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: white;
+}
+
+.testimonial_text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonials_img {
@@ -112,14 +114,10 @@ h3{
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /* Press/Section 3 */
+
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -132,20 +130,24 @@ h3{
 
 #pricing {
     padding: 100px ;
-    
 }
 
-.pricing_header {
-    text-align: center;
+.price_text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2.pricing_header {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing_column {
     padding: 3% 2%;
-    
 }  
 
-.card-header {
-    text-align: center;
+.card-body {
+    text-align: left;
 }
 
 /* Call to Action(CTA)/Section 5 */
@@ -153,22 +155,12 @@ h3{
 #cta {
     background-color: #ff4c68;
     color: white;
-    text-align: center;
-    padding: 7% 15%;
 }
 
-#cta h3 {
-    font-family: "montserrat";
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
-}
 /* Footer/Section 6 */
 
 footer {
     background-color: white;
-    text-align: center;
-    padding: 7% 15%;
 }
 
 span {
@@ -181,7 +173,6 @@ span {
     .title_image {
         position: static;
         transform: rotate(0);
-        
     }
 
     .iphone_sizing {
