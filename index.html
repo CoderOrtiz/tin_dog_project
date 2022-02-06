@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>TinDog</title>
+
   <!--Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap"
     rel="stylesheet">
-  <!-- Font Awesome -->
 
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3e762e4bdd.js" crossorigin="anonymous"></script>
 
   <!-- BootStrap Scripts -->
@@ -21,12 +22,11 @@
 
   <!-- CSS Script -->
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
 
-  <section id="title">
+  <section class="colored-section" id="title">
 
     <!-- NavBar/Section 1 -->
     <div class="container-fluid">
@@ -66,7 +66,7 @@
 
   <!-- Features/Section 2 -->
 
-  <section id="features">
+  <section class="white-section" id="features">
 
     <!-- Made class for Check Mark, Bullseye, and Heart. Added "col-lg-4" -->
     <!-- To use "col's" you must put it in a class titled "row", for Bootstrap to render the CSS required -->
@@ -106,7 +106,7 @@
 
   <!-- Testimonials/Section 3 -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
     <!-- added Bootstrap Carousel to HTML with Testimonials -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
       <div class="carousel-inner">
@@ -149,7 +149,7 @@
 
   <!-- Pricing/Section 4 -->
 
-  <section id="pricing">
+  <section class="white-section" id="pricing">
 
     <h2 class="pricing_header">A Plan for Every Dog's Needs</h2>
     <p class="pricing_header">Simple and affordable price plans for your and your dog.</p>
@@ -160,7 +160,9 @@
       <!-- Made a "pricing_column" class, and added column sizes -->
       <div class="pricing_column col-lg-4 col-md-6">
         <!-- "card" class needed to make the three cards -->
+
         <!-- Chihuahua Card -->
+
         <div class="card">
           <div class="card-header">
             <h3>Chihuahua</h3>
@@ -179,6 +181,7 @@
       </div>
 
       <!-- Labrador Class -->
+
       <div class="pricing_column col-lg-4 col-md-6">
         <div class="card">
           <div class="card-header">
@@ -196,7 +199,9 @@
           </div>
         </div>
       </div>
+
       <!-- Mastiff Card -->
+
       <div class="pricing_column col-lg-4 col-md-12">
         <div class="card">
           <div class="card-header">
@@ -215,10 +220,10 @@
       </div>
   </section>
 
-  <!-- Call to Action(CTA)/Section 5 -->
-  <!-- Added Social Media Buttons with designated logo's -->
+  <!-- Call to Action/Section 5 -->
 
-  <section id="cta">
+  <!-- Added Social Media Buttons with designated logo's -->
+  <section class="colored-section">
     <div class="container-fluid">
       <h3 class="big_heading">Find the True Love of Your Dog's Life Today.</h3>
       <button type="button" class="btn btn-dark btn btn-lg download_button"><i class="fab fa-apple"></i>
@@ -229,9 +234,9 @@
   </section>
 
   <!-- Footer/Section 6 -->
-  <!-- Added "span's" to not effect above download buttons -->
 
-  <footer id="footer">
+  <!-- Added "span's" to not effect above download buttons -->
+  <footer class="white-section" id="footer">
     <div class="container-fluid">
       <span class="fab fa-twitter"></span>
       <span class="fab fa-facebook-f"></span>
